@@ -18,7 +18,7 @@ Tested on: **Intel Core i5-13420H (12 threads) | 16GB RAM | Windows 11**
 - **Memory Allocator:** [mimalloc](https://github.com/microsoft/mimalloc) (Microsoft's high-performance allocator) for low-latency on Windows.
 - **Serialization:** [sonic-rs](https://github.com/cloudwego/sonic-rs) (SIMD-accelerated JSON) utilizing AVX2 instructions.
 
-## ⚡ SQLite "God Mode" Configuration
+## ⚡ SQLite "Death Mode" Configuration
 To bypass traditional SQLite bottlenecks, the following PRAGMAs are applied:
 - `WAL Mode`: Enables concurrent readers while writing.
 - `Synchronous = NORMAL`: Drastically reduces disk sync overhead while maintaining safety.
